@@ -99,7 +99,7 @@ h1,p, span{
 }
 
 .container-message .item-message img{
-    max-width: 70px;
+    max-width: 50px;
     border-radius: 100%;
     flex-grow: 1;
     padding:12px;
@@ -127,7 +127,7 @@ h1,p, span{
 }
 .container-message .item-message .message-detail span{
     flex-grow:1;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     color:#555;
     text-align: left;
