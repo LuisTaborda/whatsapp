@@ -86,7 +86,7 @@ light mode
 /* Flex Nav */
 .nav-bar{
     background:var(--background-color) ;
-    padding: 6px 0;
+    padding: 6px 12px 6px 12px;
     min-height: 15px;
     position: sticky;
     top:0;
@@ -101,9 +101,13 @@ light mode
 .nav-bar ul li{
     text-align: left;
     cursor: pointer;
-    margin : 0 auto;
+    margin : auto;
     padding : 4px 0;
 
+}
+
+.nav-bar ul li i{
+    font-size: 22px;
 }
 
 .nav-item .active{
