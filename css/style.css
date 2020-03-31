@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+body{
+    background: #777;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Flex Header */
+.container {
+    max-width: 600px;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    background: rgb(7,94,85);
+
+} 
+
+.icon{
+    flex-grow: 1;
+    text-align: right;
+    margin: 24px 32px;
+
+}
+
+.title{
+    flex-grow: 3;
+    text-align: left;
+    margin: 24px 32px;
+
+}
+
+
+.header .title h1{
+    font-size: 25px;
+    font-weight: 400;
+    color:white;
+    font-weight: 500;
+}
+
+.header .icon i {
+    font-size: 18px;
+    color:white;
+    margin-left: 16px;
+    transition: color 0.1s;
+}
+.header .icon i:hover{
+    color:#aaa;
+    cursor: pointer;
+
+}
+
+/* Flex Nav */
+.nav-bar{
+    background: rgb(7,94,85);
+    padding: 6px 0;
+} 
+
+.nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar ul li{
+    text-align: left;
+    color:white;
+    cursor: pointer;
+    margin : 0 auto;
+}
+
+.nav-item .active{
+    border-bottom: white solid 1.5px;
+}
+
+/* Flex Message */
+
+.container-message{
+
+}
+
+.container-message .item-message{
+    display: flex;
+    align-items: center;
+    background:#eee;
+
+}
+
+.container-message .item-message:hover{
+    background:#ddd;
+}
+
+.container-message .item-message img{
+    max-width: 70px;
+    border-radius: 100%;
+    flex-grow: 1;
+    padding:12px;
+}
+
+.container-message .item-message p{
+    flex-grow:1;
+    font-size: 14px;
+    font-weight: 500;
+    color:#555;
+    text-align: right;
+    padding-right: 32px;
+}
+
+.container-message .item-message .message-detail{
+    flex-grow:3;
+    padding-left: 12px;
+
+}
+
+.container-message .item-message .message-detail h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.container-message .item-message .message-detail span{
+    flex-grow:1;
+    font-size: 14px;
+    font-weight: 400;
+    color:#555;
+    text-align: left;
+    margin-left: 4px;
+    
+}
+
+
+
+.container-message .message-viewed i{
+    color: rgb(7,94,85);
+}
+
+.container-message .message-received i{
+    color: gray;
+}
+.container-message .audio-received i{
+    color: blue;
+}
+.container-message .audio-viewed i{
+    color: gray;
+}
+
+.container-message .video-received i{
+    color: blue;
+}
+.container-message .video-viewed i{
+    color: gray;
+}
+
+.container-message .message-new i{
+    color: rgb(7,94,85);
+    position: relative;
+    font-size: 22px;
+}
+.container-message .message-new i:after{
+    font-size: 12px; /* ajuste o tamanho do texto aqui */
+    top: 6px; /* ajusta no centro e vertical */
+    content: attr(data-qtd); /*pega o valor do atributo */
+	font-family: 'Roboto', sans-serif;
+
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
