@@ -86,39 +86,47 @@ light mode
 /* Flex Nav */
 .nav-bar{
     background:var(--background-color) ;
-    padding: 6px 12px 6px 12px;
-    min-height: 15px;
+    color:var(--main-color);
+    min-height: 30px;
     position: sticky;
     top:0;
+    list-style-type: none;
+    
 } 
 
-.nav-bar ul{
-    list-style-type: none;
-    color:var(--main-color);
-    display: flex;
+.nav-bar{
+    display:flex;
+ 
+    align-items: center;
+}
+.nav-item, .nav-icon{
+    text-align: center;
+    
+    width: 100px;
+    
+    text-align: center;
+    line-height: 30px;
+    
+}
+.nav-bar .nav-item {
+    flex-grow: 3;
+    font-size: 12px;
 }
 
-.nav-bar ul li{
-    text-align: left;
-    cursor: pointer;
-    margin : auto;
-    padding : 4px 0;
+.nav-bar .nav-icon{
+    flex-grow:1;
 
-}
-
-.nav-bar ul li i{
     font-size: 22px;
-}
 
-.nav-item .active{
-    border-bottom: var(--main-color) solid 1.5px;
+}
+.nav-bar .active{
+    border-bottom: var(--main-color) solid 2px;
+}
+.nav-bar div{
+    border-bottom: var(--background-color) solid 2px;
 }
 
 /* Flex Message */
-
-.container-message{
-
-}
 
 .container-message .item-message{
     display: flex;
@@ -190,7 +198,7 @@ light mode
 }
 
 .container-message .message-new i{
-    color: rgb(7,94,85);
+    color: rgb(6,172,158);
     position: relative;
     font-size: 22px;
     margin-top: 8px;
