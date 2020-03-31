@@ -40,7 +40,7 @@ light mode
 /* Flex Header */
 .container {
     max-width: 500px;
-    max-height: 1000px;
+    max-height: 100%;
     margin: 0 auto;
 }
 
@@ -129,7 +129,7 @@ light mode
 /* Flex Message */
 
 .container-message{
-    height: 720px;
+    height:100%;
     background-color: white;
     overflow: auto;
 }
