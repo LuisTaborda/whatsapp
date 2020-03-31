@@ -4,13 +4,13 @@ body{
     background: #777;
 }
 
-*{
+h1,p, span{
     font-family: 'Roboto', sans-serif;
 }
 
 /* Flex Header */
 .container {
-    max-width: 600px;
+    max-width: 500px;
     max-height: 1000px;
     margin: 0 auto;
 }
@@ -18,7 +18,7 @@ body{
 .header{
     display: flex;
     background: rgb(7,94,85);
-
+    min-height: 80px;
 } 
 
 .icon{
@@ -52,19 +52,20 @@ body{
 .header .icon i:hover{
     color:#aaa;
     cursor: pointer;
-
 }
 
 /* Flex Nav */
 .nav-bar{
     background: rgb(7,94,85);
     padding: 6px 0;
+    min-height: 15px;
+    position: sticky;
+    top:0;
 } 
 
 .nav-bar ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+
     display: flex;
 }
 
@@ -73,6 +74,7 @@ body{
     color:white;
     cursor: pointer;
     margin : 0 auto;
+    padding : 4px 0;
 }
 
 .nav-item .active{
@@ -105,7 +107,7 @@ body{
 
 .container-message .item-message p{
     flex-grow:1;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     color:#555;
     text-align: right;
@@ -119,21 +121,18 @@ body{
 }
 
 .container-message .item-message .message-detail h1{
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 4px;
 }
 .container-message .item-message .message-detail span{
     flex-grow:1;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color:#555;
     text-align: left;
     margin-left: 4px;
-    
 }
-
-
 
 .container-message .message-viewed i{
     color: rgb(7,94,85);
@@ -160,6 +159,7 @@ body{
     color: rgb(7,94,85);
     position: relative;
     font-size: 22px;
+    margin-top: 8px;
 }
 .container-message .message-new i:after{
     font-size: 12px; /* ajuste o tamanho do texto aqui */
