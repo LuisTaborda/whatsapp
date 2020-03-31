@@ -115,8 +115,8 @@ light mode
 
 .nav-bar .nav-icon{
     flex-grow:1;
-
-    font-size: 22px;
+    width: 35px;
+    font-size: 18px;
 
 }
 .nav-bar .active{
@@ -127,6 +127,12 @@ light mode
 }
 
 /* Flex Message */
+
+.container-message{
+    height: 720px;
+    background-color: white;
+    overflow: auto;
+}
 
 .container-message .item-message{
     display: flex;
@@ -220,3 +226,27 @@ light mode
 #checkbox_theme{
     display: none;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
