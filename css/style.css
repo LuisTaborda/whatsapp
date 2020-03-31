@@ -8,6 +8,35 @@ h1,p, span{
     font-family: 'Roboto', sans-serif;
 }
 
+/*Variaveis*/
+
+/*
+light mode
+*/
+:root {
+    --background-color:#075E55;
+    --main-color:#FFF;
+    --sub-color : #aaa;
+    --item-message-color:#eee;
+    --item-hover-message-color:#ddd;
+    --icon-viewed:#555;
+    --icon-received:rgb(24, 132, 255);  
+    --text-color:#000;
+
+}
+
+/*Dark mode*/
+[data-theme="dark"] {
+    --background-color:#333;
+    --sub-color:#BBB;
+    --main-color:#FFF;
+    --item-message-color:#222;
+    --item-hover-message-color:#333;
+    --icon-viewed:#777;
+    --icon-received:rgb(24, 132, 255);
+    --text-color:rgb(223, 223, 223);  
+}
+
 /* Flex Header */
 .container {
     max-width: 500px;
@@ -17,7 +46,7 @@ h1,p, span{
 
 .header{
     display: flex;
-    background: rgb(7,94,85);
+    background:var(--background-color);
     min-height: 80px;
 } 
 
@@ -39,24 +68,24 @@ h1,p, span{
 .header .title h1{
     font-size: 25px;
     font-weight: 400;
-    color:white;
+    color:var(--main-color);
     font-weight: 500;
 }
 
 .header .icon i {
     font-size: 18px;
-    color:white;
+    color:var(--main-color);
     margin-left: 16px;
     transition: color 0.1s;
 }
 .header .icon i:hover{
-    color:#aaa;
+    color:var(--sub-color);
     cursor: pointer;
 }
 
 /* Flex Nav */
 .nav-bar{
-    background: rgb(7,94,85);
+    background:var(--background-color) ;
     padding: 6px 0;
     min-height: 15px;
     position: sticky;
@@ -65,20 +94,20 @@ h1,p, span{
 
 .nav-bar ul{
     list-style-type: none;
-
+    color:var(--main-color);
     display: flex;
 }
 
 .nav-bar ul li{
     text-align: left;
-    color:white;
     cursor: pointer;
     margin : 0 auto;
     padding : 4px 0;
+
 }
 
 .nav-item .active{
-    border-bottom: white solid 1.5px;
+    border-bottom: var(--main-color) solid 1.5px;
 }
 
 /* Flex Message */
@@ -90,12 +119,12 @@ h1,p, span{
 .container-message .item-message{
     display: flex;
     align-items: center;
-    background:#eee;
+    background:var(--item-message-color);
 
 }
 
 .container-message .item-message:hover{
-    background:#ddd;
+    background:var(--item-hover-message-color);
 }
 
 .container-message .item-message img{
@@ -109,7 +138,7 @@ h1,p, span{
     flex-grow:1;
     font-size: 12px;
     font-weight: 500;
-    color:#555;
+    color:var(--icon-viewed);
     text-align: right;
     padding-right: 32px;
 }
@@ -124,35 +153,36 @@ h1,p, span{
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 4px;
+    color:var(--text-color);
 }
 .container-message .item-message .message-detail span{
     flex-grow:1;
     font-size: 14px;
     font-weight: 400;
-    color:#555;
+    color:var(--icon-viewed);
     text-align: left;
     margin-left: 4px;
 }
 
-.container-message .message-viewed i{
-    color: rgb(7,94,85);
+.container-message .message-received i{
+    color: var(--icon-received);
 }
 
-.container-message .message-received i{
-    color: gray;
-}
-.container-message .audio-received i{
-    color: blue;
+.container-message .message-viewed i{
+    color:var(--icon-viewed);
 }
 .container-message .audio-viewed i{
-    color: gray;
+    color: var(--icon-received);
+}
+.container-message .audio-received i{
+    color:var(--icon-viewed);
 }
 
-.container-message .video-received i{
-    color: blue;
-}
 .container-message .video-viewed i{
-    color: gray;
+    color: var(--icon-received);
+}
+.container-message .video-received i{
+    color:var(--icon-viewed);
 }
 
 .container-message .message-new i{
@@ -173,4 +203,8 @@ h1,p, span{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#checkbox_theme{
+    display: none;
 }
