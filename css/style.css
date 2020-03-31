@@ -91,7 +91,7 @@ light mode
     position: sticky;
     top:0;
     list-style-type: none;
-    
+    z-index:1;
 } 
 
 .nav-bar{
