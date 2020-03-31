@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
 
 body{
-    background: #777;
+    
 }
 
 h1,p, span{
@@ -39,9 +39,10 @@ light mode
 
 /* Flex Header */
 .container {
-    max-width: 500px;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
+    
 }
 
 .header{
